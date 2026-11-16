@@ -21,10 +21,8 @@ This project is designed like a real production environment with secure private 
 - Storage: Amazon S3
 
 ## 🏗️ AWS Architecture
-
-![Architecture Diagram](./Frontend/HMS/src/img/aws.png)
-![Server Image](./Frontend/HMS/src/img/sc1.png)
-
+<img width="1536" height="1024" alt="aws" src="https://github.com/user-attachments/assets/6c2faf78-80da-4295-b7aa-52c02e9ce622" />
+  
 The system is deployed inside an AWS VPC with public and private subnets.
 
 Public subnet:
@@ -56,8 +54,7 @@ They are accessible only by admin through:
 This keeps internal tools secure and prevents public access to sensitive services.
 
 ## 🔄 CI/CD Pipeline with Jenkins
-
-![Jenkins CI/CD](./Frontend/HMS/src/img/sc6.png)
+<img width="1903" height="1005" alt="sc6" src="https://github.com/user-attachments/assets/864777e3-0724-417e-b26f-455cc08f4486" />
 
 The Jenkins pipeline includes:
 
@@ -76,8 +73,6 @@ The pipeline successfully deploys the application to Kubernetes after code quali
 
 ## 🧪 SonarQube Code Quality
 
-![SonarQube](./Frontend/HMS/src/img/sc8.png)
-
 SonarQube is integrated with Jenkins to scan the project for:
 
 - Bugs
@@ -93,8 +88,7 @@ The project passed the SonarQube Quality Gate.
 ## ☸️ Kubernetes Deployment
 
 Application services are deployed in the `hms` namespace.
-
-![Kubernetes Pods](./Frontend/HMS/src/img/sc10.png)
+<img width="1333" height="525" alt="KUBER" src="https://github.com/user-attachments/assets/17938edd-687c-4b7b-91d7-d148fdbda61c" />
 
 Running workloads include:
 
@@ -109,9 +103,9 @@ Kubernetes handles service discovery, scaling, pod management, and rollout updat
 ## 📊 Monitoring with Prometheus and Grafana
 
 Monitoring stack is deployed in a separate `monitoring` namespace.
+<img width="1914" height="1015" alt="PROM" src="https://github.com/user-attachments/assets/d61d27a0-ec1b-4b93-8b32-35281943e0db" />
 
-![Kubernetes Pods](./Frontend/HMS/src/img/sc11.png)
-![Kubernetes Pods](./Frontend/HMS/src/img/sc12.png)
+<img width="1919" height="950" alt="GRA" src="https://github.com/user-attachments/assets/a04c6c06-cdcc-45d1-91e9-4fb29d3cd7e0" />
 
 Components include:
 
@@ -133,8 +127,7 @@ Grafana dashboards are used to monitor:
 ## 🧱 Terraform Infrastructure as Code
 
 Terraform is used to provision the AWS infrastructure.
-
-![Kubernetes Pods](./Frontend/HMS/src/img/terra.png)
+<img width="628" height="305" alt="TERRA" src="https://github.com/user-attachments/assets/cc52d8fe-a295-4b84-bc80-b83f10ca9620" />
 
 Terraform creates:
 
